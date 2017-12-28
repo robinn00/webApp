@@ -11,3 +11,8 @@ python manage.py shell
 python manage.py dbshell
 
 python manage.py collectstatic
+
+
+
+
+Apache+Django+mod_wsgi
