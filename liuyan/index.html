@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>陕西冶金医院留言</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="head">
+	<div class="fl">
+		<img src="images/btn01.png"onclick="javascript:window.history.back(-1);" title="返回上一页" alt="返回点击按钮">
+	</div>
+	<div class="h">
+		<p>陕西冶金医院<br>
+		<span style="margin-top: 0.2rem">健康热线：02989137828 </span></p>
+	</div>
+	<div class="fr">
+		<a href="tel:02989137828"style="float:right; margin-top: 0.2rem; max-width:100%;"target="_blank"><img src="images/btn02.png" alt=""></a>
+	</div>
+</div>
+	
+<div class="main">
+	
+<div class="wenda"></div>		
+<span><a name="target"></a></span>		
+
+
+<script type="text/html" id="fh_1">
+<div class="wd01">
+	<div class="ysl">
+		<img src="images/ys.jpg" alt="">
+	</div>
+	<div class="ys01right">
+		<p>家长您好，过年期间，我院全员放假，但是为了及时解决家长的疑虑，不耽误孩子病情，我院<strong>开设快速问诊服务</strong>，简单几步，给出指导方案。<span style="color: red;">（温馨提示：一岁以下儿童建议观察）</span></p>
+	</div>
+</div>
+</script>
+	
+<script type="text/html" id="fh_2">
+<div class="wd02">
+	<div class="ysl">
+		<img src="images/ys.jpg" alt="">
+	</div>
+	<div class="ys02right">
+		<h1> 家长是想咨询哪方面问题：</h1>
+		<div class="nav01">
+			<a class="vd002cls">多动症</a>
+			<a class="vd002cls">遗尿症</a>
+			<a class="vd002cls">抽动症</a>
+			<a class="vd002cls">发育迟缓</a><br>
+			<a class="vd002cls">智力低下</a>
+			<a class="vd002cls">其他</a>
+		</div>	
+	</div>
+</div>
+</script>
+
+<script type="text/html" id="fh_3">
+<div class="wd03">
+	<div class="ysl">
+		<img src="images/ys.jpg" alt="">
+	</div>
+	<div class="ys03right">
+		<h1> 家长是想咨询哪方面问题：</h1>
+		<div class="nav01">
+			<a class="wd03cls">问诊</a>
+			<a class="wd03cls">费用</a>
+			<a class="wd03cls">治疗</a>
+			<a class="wd03cls">仪器</a>
+			<a class="wd03cls">检查</a><br>
+			<a class="wd03cls">其他</a>
+		</div>	
+	</div>
+</div>
+</script>
+
+
+<script type="text/html" id="fh_4">
+<div class="wd04">
+	<div class="ysl">
+		<img src="images/ys.jpg" alt="">				
+	</div>
+	<div class="ys04right">
+		<p>好的，家长，请留下您的联系方式，我院将尽快安排相关医生对于您的疑问给予解答</p>
+	</div>	
+</div>
+</script>
+
+<script type="text/html" id="fh_5">
+<div class='wd05'>
+	<div class='ysl'>
+		<img src='images/ys.jpg' >
+	</div>
+	<div class='ys04right'><p>好的，请保持电话通畅。如三分钟内无人回电，可拨打029-89137838。</p></div>
+</div>
+</script>
+
+
+<script type="text/html" id="fh_6">
+<div class="wdhz">
+	<div class="hzr">
+		<img src="images/hz.jpg">
+	</div>
+	<div class="hzl">
+		<p>{vars}</p>
+	</div>
+</div>
+</script>
+
+	
+	
+<!--输入框-->
+<div class="shuruk">
+	<div class="shurukl">
+		<a href="tel:02989137828"target="_blank"><img src="images/yuy.png" alt=""></a>
+	</div>
+	<div class="shurukc">
+		<input id="bottom_tel_left" class="bottom_tell_text" name="tel" id="home_dx_co" type="text"/>
+		<a href="tel:02989137828"target="_blank"><img src="images/xiaol.png" alt=""></a>
+	</div>
+	<div class="shurukr" id="btn_sendinfo">
+		<p>发送</p>
+	</div>
+</div>
+	
+	
+	
+</div>
+
+
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript"  data-lxb-uid="5725989" data-lxb-gid="67273" src="http://5g.erk029.com/swt/js/diylxb.js?t=' + new Date().getTime() + '" charset="utf-8"></script>	
+<script type="text/javascript">
+var divcls = new Array(".wd01",".wd02",".wd03",".wd04",".wd05");
+var arry = new Array("#fh_1","#fh_2","#fh_3","#fh_4","#fh_5","#fh_6");
+var rootdivcls = ".wenda";
+var inputidstr = "bottom_tel_left";
+window['num'] = 0;
+window['tips'] = "请输入您的电话号码";
+for(var n=0;n<arry.length;n++){
+	window[arry[n]] = $(arry[n]).html();	
+	$(arry[n]).remove();
+}
+
+$(document).ready(function(){
+	$("#"+inputidstr).val(window['tips']);
+	$("#"+inputidstr).blur(function(){
+		var uvalue = $(this).val();
+		if (uvalue.length == 0)
+		{
+			$(this).val(window['tips']);				
+		}
+	});
+	$("#"+inputidstr).focus(function(){
+		var uvalue = $(this).val();
+		if (uvalue.length == 0 || uvalue==window['tips'])
+		{
+			$(this).val("");			
+		}
+
+	});
+	
+
+	$(rootdivcls).append(window[arry[0]]);	
+	$(rootdivcls).append(window[arry[1]]);	
+	loadfadein(divcls[1],"0");	
+	$(divcls[1]+" .vd002cls").click(function(){					
+		$(rootdivcls).append(window[arry[2]]);
+		loadfadein(divcls[2],"0");		
+		$(divcls[2]+" .wd03cls").click(function(){			
+			$(rootdivcls).append(window[arry[3]]);
+			loadfadein(divcls[3],"0");
+		});		
+	});	
+	
+	
+	$(".shurukr").click(function(){		
+		window['num'] += 1;
+		var inputval = $("#"+inputidstr).val();		
+		if(0 == inputval.length || window['tips'] == inputval){
+			window.alert(window['tips']);
+			return;
+		}		
+		var replacestr = window[arry[5]].replace("{vars}",inputval);
+		$(rootdivcls).append(replacestr);	
+		loadfadein(".wdhz","0");
+		lxb.call(document.getElementById(inputidstr));
+		setTimeout(function(){showwelcome();},"2000");
+
+	});	
+	
+	
+	var showwelcome = function(){		
+		$(rootdivcls).append(window[arry[4]]);
+		loadfadein(divcls[4],"0");
+	};
+	
+		
+	function loadfadein(clsstr,number){			
+		var fnload = function(clsstr){
+			$(clsstr).last().hide();
+			$(clsstr).last().fadeTo("slow", 0.88).show();
+			location();				
+		};
+		setTimeout(function(){fnload(clsstr);},number);
+	};	
+	
+	
+	var location = function(){
+		window.location.href="#target";
+	};	
+	
+});
+</script>	
+</body>
+</html>

@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+/*公用自适应样式-->*/
+*{ margin:0 auto}
+html{ font-size:20px}
+html{ zoom:expression(function(ele){ele.style.zoom = "1";document.execCommand("BackgroundImageCache",false,true);}(this));}
+body,div,dl,dt,dd,ul,ol,li,{ background:transparent; list-style: none; margin:0; padding:0;}
+body,button,input,select,textarea{ font:14px/1.6 "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53", Arial, sans-serif; font-family: "微软雅黑";}
+body{ font-size:0.7rem;background: #ebebeb;}
+i,em{ font-size:100%; font-style:normal; font-weight:normal;}
+p{color: #202020;}
+a{ text-decoration: none; color: #fff;}
+h1,h2,h3,h4,h5,h6{ font-size:100%; font-style:normal; font-weight:normal;}
+table{ border-collapse:collapse; border-spacing:0;}
+fieldset,img{ border:none;}
+img{ vertical-align: middle; width: 100%;z-index: 1}
+
+.head{max-width: 640px;background: #393a3e;overflow: hidden;margin: 0 auto;}
+.fl{float: left;width: 20%;margin-left: 0.5rem;margin-top: 0.4rem;}
+.fl img{width: 80%;margin-top: 0.2rem;}
+.h{font-size: 0.9rem;text-align:center;display:inline-block;margin: 0 auto;}
+.h p{color: #fff;display:inline-block;margin-top: 0.2rem;}
+.h p span{color: #c6ff00;font-size: 0.7rem;line-height: 1.0rem;}
+.fr{ width: 20%;float:right;margin-top: 0.4rem;display: inline-block;margin-right: 0.5rem;}
+.fr img{float: right;}
+.main{max-width: 640px;overflow: hidden;margin: 0 auto;}
+.wenda{width: 98%;margin: 0.8rem 0.5rem;overflow: hidden;margin-bottom: 2.8rem;}
+.ysl{width: 12%;float: left;display: inline-block;}
+.ys01right{width: 70%;display: inline-block;background:url(../images/ys01right.png)no-repeat;background-size: 100%  100%; }
+.ys01right p{margin-right: 0.1rem;font-size: 0.57rem;margin-left: 0.6rem;line-height: 1.0rem;}
+.wd02,.wd03,.wd04,.wd05,.wdhz{margin-top: 0.8rem;float: left;width: 100%;overflow: hidden;display:none;}
+.ys02right,.ys03right{width: 70%;display: inline-block;background:url(../images/ys02right.png)no-repeat;background-size: 100%  100%; }
+.ys04right{width: 70%;display: inline-block;background:url(../images/ys03right.png)no-repeat;background-size: 100%  100%; }
+.ys04right p{font-size: 0.6rem;margin-left: 0.6rem;line-height: 1.0rem;margin-right: 0.2rem;}
+h1{font-size: 0.57rem;margin-left: 0.6rem;margin-top: 0.2rem;}
+.nav01{margin-top: 0.1rem;margin-left: 1.2rem;}
+.nav01 a{font-size: 0.52rem;color: #3248a3;text-decoration:underline;margin-right: 0.3rem}
+.hzr{float: right;width: 12%;display: inline-block;margin-right:1.0rem;}
+.hzl{width: 70%;float: right;display: inline-block;background:url(../images/wdhz.png)no-repeat;background-size: 100%  100%;}
+.hzl p{font-size: 0.57rem;line-height: 1.9rem;margin-left: 1.2rem;}
+
+.shuruk{width: 100%;max-width: 640px;background: #fff;height: 2rem;margin-top: 1.8rem;overflow: hidden;position: fixed;bottom: 0.1rem;visibility:visible;position:fixed;bottom:0px;}
+.shurukl{float: left;width: 13%;}
+.shurukl a {float: left;width: 90%;}
+.shurukc{display:inline-block;width: 66%;border-bottom: 1px solid #19af2e;font-size: 0.8rem;line-height: 1.8rem;}
+.bottom_tell_text{ background:no-repeat 0 0 scroll #fff;border:none;outline:medium;}
+.shurukc a{width: 16%;float: right;}
+.shurukr{background: url(../images/btnb.png)no-repeat;background-size: 100%; float: right;width: 16%;margin-right: 0.6rem;margin-top: 0.2rem;}
+.shurukr p{font-size: 0.8rem;border-radius:0.3rem;line-height: 1.8rem;color: #fff;text-align: center;}
