@@ -1,5 +1,4 @@
 <?php
-
 /**********************
 DedeCMS 管理员帐号重设工具.
 http://bbs.dedecms.com/
