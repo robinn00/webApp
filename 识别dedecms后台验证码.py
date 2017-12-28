@@ -1,13 +1,4 @@
 # -*- coding: utf-8 -*-
-''' 采用PIL 和pytesser进行简单的验证码识别
-程序包中已经包含了pytesser，但是需要自己安装PIL
-
-使用样例
-getverify1('v1.jpg') 返回值为识别出的字符
-
-author：nwpulei@gmail.com
-2013-1-1
-'''
 import Image
 import ImageEnhance
 import ImageFilter
@@ -47,8 +38,6 @@ rep={'O':'0',
 '''
 
 rep = {'0': 'O', '1': 'I', '1': 'L', '2': 'Z', '8': 'S','?': 'R','.':'L','(':'C'}
-
-
 
 def  getverify1(name):
     #打开图片
