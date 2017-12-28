@@ -39,8 +39,6 @@ rep={'O':'0',
 
 rep = {'0': 'O', '1': 'I', '1': 'L', '2': 'Z', '8': 'S','?': 'R','.':'L','(':'C'}
 
-
-
 def  getverify1(name):
     #打开图片
     im = Image.open(name)
