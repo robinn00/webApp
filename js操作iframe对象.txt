@@ -1,0 +1,46 @@
+<script type="text/javascript">
+var oFrm = document.getElementById('mapbarframe');
+//oFrm.src = "http://searchbox.mapbar.com/publish/template/template1010/index.jsp?CID=gonglao&tid=tid1010&showSearchDiv=1&cityName=%E6%88%90%E9%83%BD%E5%B8%82&nid=MAPBHNHBCRXAZBJIXNHNX&width=600&height=500&infopoi=2&zoom=10&control=1"; 
+oFrm.onload = oFrm.onreadystatechange = function() {
+     if (this.readyState && this.readyState != 'complete') return;
+     else {
+         onComplete();
+     }
+}
+
+function onComplete(){
+	
+}
+/*
+var iframe;  
+function load() {  
+	iframe = document.getElementById("mapbarframe");  
+	iframe.onload = iframe.onreadystatechange = iframeload;   
+	iframe.src = "http://searchbox.mapbar.com/publish/template/template1010/index.jsp?CID=gonglao&tid=tid1010&showSearchDiv=1&cityName=%E6%88%90%E9%83%BD%E5%B8%82&nid=MAPBHNHBCRXAZBJIXNHNX&width=600&height=500&infopoi=2&zoom=10&control=1";  
+}  
+function iframeload() {  
+	if (!iframe.readyState || iframe.readyState == "complete") {  
+		window.alert(document.getElementById("mapbarframe").getElementById("MapContainer")); 
+		
+		var doc;
+		if (document.all){ 
+			// IE 
+			doc = iframe.document; 
+		}else{ 
+			// ±ê×¼
+			doc = iframe.contentDocument; 
+		}
+		window.alert(doc.body.innerHTML);
+	}  
+} 
+window.onload = load;
+*/
+/*
+function map_1(obj){    
+	var div=obj.getElementById("MapContainer");
+		div.getElementsByTagName("td")[1].innerText = "doxdox";
+		//var div2 =document.getElementById("mk_label_14565561961738458");
+		//div2.innerText = "xxxx";
+}
+*/
+</script>
